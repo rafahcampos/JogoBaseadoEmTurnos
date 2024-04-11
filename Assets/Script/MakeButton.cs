@@ -21,21 +21,21 @@ public class MakeButton : MonoBehaviour
     {
         GameObject hero = GameObject.FindGameObjectWithTag("Hero");
 
-        if(btn.CompareTo("MeeleBtn") == 0)
+        if(btn.CompareTo("MeleeBtn") == 0)
         {
             hero.GetComponent<FighterAction>().SelectAttack("melee");
         }
-        if(btn.CompareTo("MagicBtn") == 0)
+        else if(btn.CompareTo("MagicBtn") == 0)
         {
             hero.GetComponent<FighterAction>().SelectAttack("magic");
         }
-        if (btn.CompareTo("RangeBtn") == 0)
+        else if (btn.CompareTo("RangeBtn") == 0)
         {
             hero.GetComponent<FighterAction>().SelectAttack("range");
         }
-        if (btn.CompareTo("RunBtn") == 0)
+        else if (btn.CompareTo("RunBtn") == 0)
         {
-            hero.GetComponent<FighterAction>().SelectAttack("run")
+            hero.GetComponent<FighterAction>().SelectAttack("run");
         }
     }
 }
