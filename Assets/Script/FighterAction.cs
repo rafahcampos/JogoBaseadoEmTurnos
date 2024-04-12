@@ -35,15 +35,15 @@ public class FighterAction : MonoBehaviour
         }
         if(btn.CompareTo("melee") == 0)
         {
-            Debug.Log("Melee Attack!");
+            meleeAttack.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("magic") == 0)
         {
-            Debug.Log("Magic Attack!");
+            rangeAttack.GetComponent<AttackScript>().Attack(victim);
         }
         else if (btn.CompareTo("range") == 0)
         {
-            Debug.Log("Range Attack");
+            rangeAttack.GetComponent<AttackScript>().Attack(victim);
         }
         else if(btn.CompareTo("run") == 0)
         {
