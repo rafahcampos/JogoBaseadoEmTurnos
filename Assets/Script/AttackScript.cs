@@ -11,6 +11,9 @@ public class AttackScript : MonoBehaviour
     private bool magicAttack;
 
     [SerializeField]
+    private bool magicCost;
+
+    [SerializeField]
     private float minAttackMultiplier;
 
     [SerializeField]
@@ -23,14 +26,38 @@ public class AttackScript : MonoBehaviour
     private float maxDefenseMultiplier;
 
 
-
+    private FighterStats attackerStats;
+    private FighterStats targetStats;
     private float damage = 0.0f;
     private float xMagicNewScale;
+    private Vector2 magicScale;
 
 
-
- public void Attack(GameObject owner)
+    private void Start()
     {
+        magicScale = GameObject.Find("HeroMagicFill").GetComponent<RectTransform>().localScale;
+    }
 
+
+    public void Attack(GameObject victim)
+    {
+        attackerStats = owner.GetComponent<FighterStats>();
+        targetStats = victim.GetComponent<FighterStats>();
+
+        if(attackerStats.magic >= magicCost)
+        {
+            float multiplier = Random.Range(minAttackMultiplier, maxAttackMultiplier);
+            attackerStats.updateManaFill(magicCost);
+
+            damage = multiplier * attackerStats.attack;
+            if (magicAttack)
+            {
+                damage = multiplier * attackerStats.magic;
+                attackerStats.magic = attackerStats.magic - magicCost;
+            }
+
+            float defenseMultiplier = Random.Range(minDefenseMultiplier, maxDefenseMultiplier);
+
+        }
     }
 }
