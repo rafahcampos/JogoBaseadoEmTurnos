@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 135031213}
   - component: {fileID: 135031212}
   m_Layer: 5
-  m_Name: HeroManaFill
+  m_Name: EnemyManaFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165, y: -300.7}
+  m_AnchoredPosition: {x: 741.5, y: -300.7}
   m_SizeDelta: {x: 145, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135031212
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 329223559}
   - component: {fileID: 329223558}
   m_Layer: 5
-  m_Name: HeroHealthFill
+  m_Name: EnemyHealthFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -810,7 +810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165, y: -229.89996}
+  m_AnchoredPosition: {x: 742.8, y: -229.89996}
   m_SizeDelta: {x: 145, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &329223558
@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 447009120}
   - component: {fileID: 447009119}
   m_Layer: 5
-  m_Name: HeroFrameLabel
+  m_Name: EnemyFrameLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,7 +885,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.000008, y: -176}
+  m_AnchoredPosition: {x: 942, y: -176}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447009119
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Paladin
+  m_text: Ogre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 794927172}
   - component: {fileID: 794927171}
   m_Layer: 5
-  m_Name: HeroMagicBack
+  m_Name: EnemyMagicBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1379,7 +1379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165, y: -301}
+  m_AnchoredPosition: {x: 741.4, y: -301}
   m_SizeDelta: {x: 180, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &794927171
@@ -1736,15 +1736,15 @@ RectTransform:
   - {fileID: 447009118}
   - {fileID: 946150841}
   - {fileID: 1467570559}
+  - {fileID: 329223557}
   - {fileID: 1020470904}
   - {fileID: 794927170}
-  - {fileID: 329223557}
   - {fileID: 135031211}
   m_Father: {fileID: 146547210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -508, y: -17}
+  m_AnchoredPosition: {x: -423, y: -17}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &946150840
@@ -1759,7 +1759,7 @@ GameObject:
   - component: {fileID: 946150843}
   - component: {fileID: 946150842}
   m_Layer: 5
-  m_Name: HetoHealthLabel
+  m_Name: EnemyHealthLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1781,7 +1781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 157.9, y: -205}
+  m_AnchoredPosition: {x: 735.8, y: -205}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &946150842
@@ -2102,7 +2102,7 @@ GameObject:
   - component: {fileID: 1020470906}
   - component: {fileID: 1020470905}
   m_Layer: 5
-  m_Name: HetoMagicLabel
+  m_Name: EnemyMagicLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2124,7 +2124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 158.8, y: -276}
+  m_AnchoredPosition: {x: 734.8, y: -276}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020470905
@@ -2520,7 +2520,7 @@ GameObject:
   - component: {fileID: 1196951191}
   - component: {fileID: 1196951190}
   m_Layer: 5
-  m_Name: HetoHealthLabel
+  m_Name: HeroHealthLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2722,7 +2722,7 @@ Transform:
   m_GameObject: {fileID: 1295884061}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.4000006, y: -0.22, z: 0}
+  m_LocalPosition: {x: -4.4000006, y: 0.23, z: 0}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2852,7 +2852,7 @@ GameObject:
   - component: {fileID: 1467570561}
   - component: {fileID: 1467570560}
   m_Layer: 5
-  m_Name: HeroHealthBack
+  m_Name: EnemyHealthBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2874,7 +2874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165, y: -230}
+  m_AnchoredPosition: {x: 743, y: -230}
   m_SizeDelta: {x: 180, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467570560
@@ -2947,9 +2947,9 @@ RectTransform:
   - {fileID: 674209572}
   - {fileID: 1196951189}
   - {fileID: 1430270975}
+  - {fileID: 1013992270}
   - {fileID: 1857249716}
   - {fileID: 1802497265}
-  - {fileID: 1013992270}
   - {fileID: 239395034}
   m_Father: {fileID: 146547210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3195,7 +3195,7 @@ GameObject:
   - component: {fileID: 1857249718}
   - component: {fileID: 1857249717}
   m_Layer: 5
-  m_Name: HetoMagicLabel
+  m_Name: HeroMagicLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3680,7 +3680,7 @@ Transform:
   m_GameObject: {fileID: 2045890450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.31, y: 1.1800001, z: 0}
+  m_LocalPosition: {x: 3.64, y: 0.45, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
